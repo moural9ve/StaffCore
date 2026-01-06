@@ -1,10 +1,10 @@
-# Sistema de Gestão de Pessoas e Empregados
+# StaffCore — Sistema de Gestão de Pessoas e Empregados
 
 ## 📌 Visão Geral
 
-Este projeto é um **sistema de gestão de pessoas e empregados**, desenvolvido em **Python**, com foco em modelagem orientada a objetos. Ele organiza diferentes tipos de pessoas (físicas e jurídicas), profissionais e funcionários, utilizando **herança, composição e enums** para manter o código estruturado, reutilizável e fácil de manter.
+O **StaffCore** é um sistema de gestão de pessoas e empregados desenvolvido em **Python**, com foco em **Programação Orientada a Objetos (POO)**. O projeto modela diferentes tipos de pessoas, empregados e profissionais específicos, utilizando conceitos como **herança**, **composição** e **enumerações (Enums)** para garantir organização, clareza e reutilização de código.
 
-O sistema é ideal para fins **educacionais**, aprendizado de **POO em Python**, ou como base para sistemas maiores de gestão empresarial, jurídica ou de serviços.
+Este sistema é indicado para fins **acadêmicos**, **educacionais** e como base para futuras expansões em sistemas de gestão empresarial.
 
 ---
 
@@ -36,14 +36,14 @@ O sistema é ideal para fins **educacionais**, aprendizado de **POO em Python**,
 
 ### 🔹 Pessoa
 
-Classe base do sistema, representando uma pessoa genérica.
+Classe base do sistema, responsável por atributos comuns a qualquer tipo de pessoa.
 
-**Atributos comuns:**
+**Principais atributos:**
 
 * Nome
 * Documento (CPF ou CNPJ)
-* Sexo
 * Endereço
+* Sexo
 
 ---
 
@@ -51,7 +51,7 @@ Classe base do sistema, representando uma pessoa genérica.
 
 Herda de `Pessoa` e representa indivíduos.
 
-**Exemplos:**
+**Exemplos de uso:**
 
 * Cliente
 * Funcionário
@@ -60,33 +60,33 @@ Herda de `Pessoa` e representa indivíduos.
 
 ### 🔹 Pessoa Jurídica (`Juridica`)
 
-Representa empresas ou organizações.
+Representa empresas ou organizações, também herdando de `Pessoa`.
 
 ---
 
 ### 🔹 Cliente
 
-Herda de `Fisica` e representa clientes do sistema.
+Especialização de `Fisica`, utilizada para representar clientes do sistema.
 
 ---
 
 ### 🔹 Funcionário
 
-Herda de `Fisica` e representa empregados da organização.
+Especialização de `Fisica`, representando empregados da organização.
 
-**Especializações:**
+**Tipos de funcionários implementados:**
 
 * Advogado
 * Médico
 * Motoboy
 
-Cada especialização pode conter regras e atributos próprios conforme a função exercida.
+Cada tipo pode conter regras, atributos e comportamentos específicos de acordo com sua função.
 
 ---
 
 ## 🏷️ Enums
 
-O projeto utiliza enums para padronizar valores e evitar inconsistências.
+Os Enums são utilizados para padronizar valores e evitar inconsistências no sistema.
 
 ### 🔸 Sexo
 
@@ -104,33 +104,32 @@ Define o estado (UF) do endereço.
 
 ## ▶️ Execução do Projeto
 
-Para executar o sistema:
+Para executar o sistema, utilize o comando:
 
 ```bash
 python project/main.py
 ```
 
-O arquivo `main.py` é o ponto de entrada e pode ser usado para testes, simulações e instanciamento das classes.
+O arquivo `main.py` funciona como ponto de entrada para testes e simulações do sistema.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Objetivos do Projeto
 
-* Praticar **Programação Orientada a Objetos em Python**
-* Trabalhar com **herança, enums e organização em camadas**
-* Criar uma base sólida para sistemas de gestão
+* Aplicar conceitos de **Programação Orientada a Objetos em Python**
+* Praticar **herança, composição e enums**
+* Desenvolver um sistema organizado e escalável
 
 ---
 
 ## 🚀 Possíveis Evoluções
 
-* Persistência de dados (arquivos ou banco de dados)
-* Interface gráfica ou web
-* Sistema de autenticação
-* CRUD completo de pessoas e empregados
+* Persistência de dados em arquivos ou banco de dados
+* Interface gráfica ou aplicação web
+* Cadastro e gerenciamento completo de pessoas e empregados
 
 ---
 
 ## 🧑‍💻 Autor
 
-Projeto desenvolvido para fins educacionais e de aprendizado em Python.
+Projeto desenvolvido para fins acadêmicos e educacionais.
